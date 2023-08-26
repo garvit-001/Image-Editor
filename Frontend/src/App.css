@@ -134,3 +134,12 @@
   color: whitesmoke;
   
 }
+
+
+
+.overlay-feature{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}

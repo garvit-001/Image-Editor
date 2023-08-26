@@ -11,6 +11,7 @@ This project demonstrates the integration of React.js with ImageKit.io to effici
 - Easy setup and configuration for quick deployment.
 - AI-generated tags for your image.
 - Convert the image type as per your choice.
+- Add text overlay to your images.
 
 # Getting Started
 Follow these steps to get the project up and running:
