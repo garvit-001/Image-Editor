@@ -143,3 +143,11 @@
     flex-direction: row;
     margin: 10px;
 }
+
+.App-resize{
+  align-items: center;
+}
+
+.right-cont-resize{
+  height: 30%;
+}

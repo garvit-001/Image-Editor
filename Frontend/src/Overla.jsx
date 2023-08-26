@@ -51,11 +51,14 @@ function Overlay() {
   };
 
   const overlayTextSizeHandler = (e) => {
-    setoverlayTextSize(e.target.value);
+    if (e.target.value != "") setoverlayTextSize(e.target.value);
+    else setoverlayTextSize("1");
+    //  console.log(overlayTextSize);
   };
 
   const overlayPaddingHandler = (e) => {
-    setOverlayPadding(e.target.value);
+    if (e.target.value != "") setOverlayPadding(e.target.value);
+    else setOverlayPadding("1");
   };
 
   const backgroundExistenseHandler = (e) => {
@@ -149,16 +152,14 @@ function Overlay() {
             <h3>Font size</h3>
             <input
               type="number"
-              min="0"
+              min="1"
               max="250"
               onChange={overlayTextSizeHandler}
             />
-          </div>
-          <div className="overlay-feature param">
             <h3>Padding</h3>
             <input
               type="number"
-              min="0"
+              min="1"
               max="100"
               onChange={overlayPaddingHandler}
             />
