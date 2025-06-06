@@ -3,12 +3,11 @@ import "./App.css";
 import { IKImage, IKContext, IKUpload } from "imagekitio-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const urlEndpoint = import.meta.env.VITE_urlEndpoint;
-const publicKey = import.meta.env.VITE_publicKey;
-const authenticationEndpoint = import.meta.env.VITE_authenticationEndpoint;
-const aiTagsEndpoint = import.meta.env.VITE_aiTagsEndpoint;
+const urlEndpoint = "https://ik.imagekit.io/garvit001/";
+const publicKey = "public_PMphjT39UrcDsKGdMfvKvOz2iNs=";
+const authenticationEndpoint = "http://localhost:3001/auth";
 
-function AITags() {
+function EditImage() {
   const [url, setUrl] = useState("");
   const [width, setwidth] = useState(0);
   const [height, setheight] = useState(0);
@@ -29,7 +28,7 @@ function AITags() {
 
     const dataToSend = res;
 
-    fetch(aiTagsEndpoint, {
+    fetch("http://localhost:3001/getid", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -98,4 +97,4 @@ function AITags() {
   );
 }
 
-export default AITags;
+export default EditImage;
