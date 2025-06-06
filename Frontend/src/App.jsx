@@ -5,7 +5,7 @@ import Home from "./Home";
 import Resize from "./Resize";
 import AITags from "./AITags";
 import ImageFormat from "./ImageFormat";
-import Overlay from "./Overla";
+import Overlay from "./Overlay";
 
 const App = () => {
   return (

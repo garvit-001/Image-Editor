@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRotateRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRotateLeft } from "@fortawesome/free-solid-svg-icons";
 
-const urlEndpoint = "https://ik.imagekit.io/garvit001/";
-const publicKey = "public_PMphjT39UrcDsKGdMfvKvOz2iNs=";
-const authenticationEndpoint = "http://localhost:3001/auth";
+const urlEndpoint = import.meta.env.VITE_urlEndpoint;
+const publicKey = import.meta.env.VITE_publicKey;
+const authenticationEndpoint = import.meta.env.VITE_authenticationEndpoint;
 
 function EditImage() {
   const [url, setUrl] = useState("");

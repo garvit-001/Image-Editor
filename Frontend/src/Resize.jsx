@@ -4,11 +4,11 @@ import { IKImage, IKContext, IKUpload } from "imagekitio-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
-const urlEndpoint = "https://ik.imagekit.io/garvit001/";
-const publicKey = "public_PMphjT39UrcDsKGdMfvKvOz2iNs=";
-const authenticationEndpoint = "http://localhost:3001/auth";
+const urlEndpoint = import.meta.env.VITE_urlEndpoint;
+const publicKey = import.meta.env.VITE_publicKey;
+const authenticationEndpoint = import.meta.env.VITE_authenticationEndpoint;
 
-function EditImage() {
+function Resize() {
   const [url, setUrl] = useState("");
   const [width, setwidth] = useState(0);
   const [height, setheight] = useState(0);
@@ -125,4 +125,4 @@ function EditImage() {
   );
 }
 
-export default EditImage;
+export default Resize;
