@@ -10,7 +10,7 @@ import { faArrowRotateLeft } from "@fortawesome/free-solid-svg-icons";
 
 const urlEndpoint = "https://ik.imagekit.io/garvit001/";
 const publicKey = "public_PMphjT39UrcDsKGdMfvKvOz2iNs=";
-const authenticationEndpoint = "https://image-editor-7ppa.onrender.com/auth";
+const authenticationEndpoint = "http://localhost:3001/auth";
 
 function EditImage() {
   const [url, setUrl] = useState("");
