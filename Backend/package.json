@@ -9,8 +9,7 @@
     "webpack": "^5.99.9"
   },
   "scripts": {
-    "start": "node index.js",
-    "build": "webpack --mode production"
+    "start": "node index.js"
   },
   "name": "backend",
   "version": "1.0.0",
